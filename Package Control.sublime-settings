@@ -1,0 +1,18 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"Compare Side-By-Side",
+		"FileDiffs",
+		"Git",
+		"GitGutter",
+		"Package Control",
+		"Ruby Slim",
+		"Sass",
+		"SublimeLinter-ruby"
+	]
+}
