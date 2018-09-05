@@ -6,5 +6,6 @@
 { "keys": ["ctrl+k", "ctrl+d"], "command": "diffy" },
 { "keys": ["ctrl+k", "ctrl+c"], "command": "diffy", "args": {"action": "clear"} },
 { "keys": ["super+shift+a"], "command": "alignment" },
-{ "keys": ["ctrl+f"], "command": "toggle_distraction_free" }
+{ "keys": ["ctrl+tab"], "command": "next_view" },
+{ "keys": ["ctrl+shift+tab"], "command": "prev_view" }
 ]
