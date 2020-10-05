@@ -9,6 +9,8 @@
 		"Git",
 		"Package Control",
 		"Ruby Slim",
+		"Babel",
+		"Babel Snippets",
 		"Sass",
 		"SublimeLinter-ruby"
 	]
