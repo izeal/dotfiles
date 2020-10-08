@@ -32,7 +32,10 @@ set backspace=indent,eol,start
 set noswapfile
 set scrolloff=3
 set wildignore+=*/tmp/*,*/node_modules/*,*/public/assets*,*/vendor/*,*/coverage/*,*/.bundle/*,*/log/*,*/.git/*,*/cassettes/*
+set autoread
+set updatetime=750
 
+au CursorHold,CursorHoldI * checktime
 
 let mapleader=","
 
