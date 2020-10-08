@@ -35,7 +35,10 @@ set wildignore+=*/tmp/*,*/node_modules/*,*/public/assets*,*/vendor/*,*/coverage/
 set autoread
 set updatetime=750
 
+" for autoreload file
 au CursorHold,CursorHoldI * checktime
+au FocusGained,BufEnter * checktime
+
 
 let mapleader=","
 
