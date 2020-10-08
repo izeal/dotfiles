@@ -86,3 +86,21 @@ vnoremap <S-k> :m '<-2<CR>gv=gv
 
 
 let g:NERDSpaceDelims = 1
+
+
+" No arrow keys
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
+nnoremap <Up> <nop>
+nnoremap <Down> <nop>
+nnoremap <Left> <nop>
+nnoremap <Right> <nop>
+
+
+"So I can move around in insert
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <C-j> <Down>
