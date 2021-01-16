@@ -8,5 +8,6 @@ Just dotfiles
 
 
 ### TODO
-* iterm preference 
+* iterm preference
 `defaults write com.googlecode.iterm2 AlternateMouseScroll -bool true`
+
