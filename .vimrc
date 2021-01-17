@@ -10,6 +10,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ddollar/nerdcommenter'
 Plugin 'neoclide/coc.nvim'
+Plugin 'tpope/vim-rails' " только для того что бы работал нативный gf
 call vundle#end()
 filetype plugin indent on
 
@@ -38,8 +39,6 @@ set mouse=a
 set nobackup
 set history=1000
 set splitright
-set undodir=~/.vim/undodir
-set undofile
 set incsearch
 set hlsearch
 set colorcolumn=80
@@ -147,7 +146,7 @@ let g:ctrlp_max_depth=40
 " для того что бы не индексирвоать лишние файлы
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v(\.git|\.hg|\.svn\|vendor|tmp|node_modules|public|coverage|\.bundle|log|cassettes)$',
-    \ 'file': '\v\.(exe|so|dll)$',
+    \ 'file': '\v\.(exe|so|dll|svg)$',
     \ 'link': '',
     \ }
 nmap <c-i> :CtrlPBuffer<cr>
@@ -204,7 +203,7 @@ vnoremap <Down> <nop>
 vnoremap <Left> <nop>
 vnoremap <Right> <nop>
 nnoremap Q <nop> " никогда не попадать в Ex мод
-nnoremap <c-]> <nop> " каоке то странное сочетание мне постоянно мешало
+" nnoremap <c-]> <nop> " каоке то странное сочетание мне постоянно мешало
 nnoremap <space> <nop>
 
 autocmd BufWritePre * :%s/\s\+$//e
@@ -216,9 +215,7 @@ nnoremap <leader>rp :CtrlPClearCache<CR> " reload cache ctrlP
 
 
 "TODO"
-" поставить мультикурсор"
 " научиться искать лишь в выбранной дирректории и определённое разрешение файлов"
-" научиться выделять все слова одинаковые мультикурсором"
 " подсвечивать строчки которые изменены но ещё не закоммичены
 
 
@@ -236,3 +233,7 @@ nnoremap <leader>rp :CtrlPClearCache<CR> " reload cache ctrlP
 "    endif
 
 
+
+nmap <silent> <leader>gf <Plug>(coc-definition)
+
+" ctags -R -o tags . --languages=javascript,ruby --exclude=.git --exclude=log $(bundle list --paths) " добавить проект и его исходники в ситаги
