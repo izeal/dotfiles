@@ -214,6 +214,7 @@ nnoremap <leader>rv :so $MYVIMRC<CR> " reload vimrc
 nnoremap <leader>rp :CtrlPClearCache<CR> " reload cache ctrlP
 nnoremap <leader>rt :NERDTreeRefreshRoot<CR> "reload NERDTree
 
+nnoremap <leader>gb :Git blame<CR> "show git blame
 
 "TODO"
 " научиться искать лишь в выбранной дирректории и определённое разрешение файлов"
