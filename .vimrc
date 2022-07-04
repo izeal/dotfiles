@@ -168,6 +168,7 @@ vmap <leader>/ <leader>c<space>
 
 " алиас для прая
 iabbrev bp binding.pry
+iabbrev cl console.log('---', '
 
 " <tab> для автозаполения coc
 function! s:check_back_space() abort
