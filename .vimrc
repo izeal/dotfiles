@@ -212,6 +212,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 " для дебага
 nnoremap <leader>ev :vsplit $MYVIMRC<CR> "edit vimrc
 nnoremap <leader>rv :so $MYVIMRC<CR> " reload vimrc
+nnoremap <leader>rz :vsplit ~/.zshrc<CR> " edit zshrc
 nnoremap <leader>rp :CtrlPClearCache<CR> " reload cache ctrlP
 nnoremap <leader>rt :NERDTreeRefreshRoot<CR> "reload NERDTree
 
