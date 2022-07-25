@@ -143,6 +143,7 @@ nmap <C-t> :call ToggleTree()<CR>
 " если файлов в проекте много то он индексирует все файлы
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
+let g:ctrlp_show_hidden=1 "что бы показывал скрытые файлы типо .dockerignore
 " для того что бы не индексирвоать лишние файлы
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v(\.git|\.hg|\.svn\|vendor|tmp|node_modules|public|coverage|\.bundle|log|cassettes)$',
