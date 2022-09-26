@@ -6,6 +6,7 @@ Just dotfiles
 * Run installation script: `dotfiles/install`
 * Set the sublimes settings manually
 
+.ya-disk
 
 ### TODO
 * iterm preference
