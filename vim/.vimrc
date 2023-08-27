@@ -11,6 +11,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ddollar/nerdcommenter'
 Plugin 'neoclide/coc.nvim'
 Plugin 'tpope/vim-rails' " только для того что бы работал нативный gf
+Plugin 'will133/vim-dirdiff'
+Plugin 'jelera/vim-javascript-syntax' " для правильных отступов в js файлах
 call vundle#end()
 filetype plugin indent on
 
