@@ -245,3 +245,19 @@ nnoremap <leader>gb :Git blame<CR> "show git blame
 nmap <silent> <leader>gf <Plug>(coc-definition)
 
 " ctags -R -o tags . --languages=javascript,ruby --exclude=.git --exclude=log $(bundle list --paths) " добавить проект и его исходники в ситаги
+
+" что бы выключить её после дифа colorscheme default
+if &diff
+  colorscheme desert
+endif
+
+" что бы на русском языке тоже можно было во всех режимах кроме инсёрта
+" нормально работать
+set langmap=йq,цw,уe,кr,еt,нy,гu,шi,щo,зp,х[,ъ],фa,ыs,вd,аf,пg,рh,оj,лk,дl,ж\\;,э',ё\\,яz,чx,сc,мv,иb,тn,ьm,б\\,,ю.,ЙQ,ЦW,УE,КR,ЕT,НY,ГU,ШI,ЩO,ЗP,Х{,Ъ},ФA,ЫS,ВD,АF,ПG,РH,ОJ,ЛK,ДL,Ж:,Э\\",ЯZ,ЧX,СC,МV,ИB,ТN,ЬM,Б<,Ю>,Ё/|
+
+
+" folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
