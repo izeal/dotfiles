@@ -1,7 +1,7 @@
 alias ll='ls -lah'
 alias be='bundle exec'
 alias ber='bundle exec spring rspec'
-alias go='git checkout'
+alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias ga='git add'
