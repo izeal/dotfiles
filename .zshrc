@@ -2,7 +2,6 @@ ZSH_THEME="../../.dotfiles/akm"
 DISABLE_AUTO_UPDATE="true"
 
 plugins=(vi-mode)
-plugins=(git)
 
 export EDITOR=vim
 export LOGNAME=izeal
